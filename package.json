@@ -1,0 +1,49 @@
+{
+  "name": "heartbeat-retry",
+  "version": "0.0.0",
+  "description": "Retry a promise with a heartbeat",
+  "license": "MIT",
+  "private": false,
+  "author": "Connor White",
+  "contributors": [],
+  "homepage": "https://github.com/bconnorwhite/heartbeat-retry#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/heartbeat-retry.git"
+  },
+  "bugs": "https://github.com/bconnorwhite/heartbeat-retry/issues",
+  "keywords": [
+    "heartbeat",
+    "retry",
+    "promise",
+    "p",
+    "callback"
+  ],
+  "type": "module",
+  "main": ".auto/build/index.js",
+  "exports": "./.auto/build/index.js",
+  "types": ".auto/build/index.d.ts",
+  "files": [
+    ".auto/build/**/!(tsconfig.tsbuildinfo)"
+  ],
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "scripts": {
+    "build": "auto build",
+    "prepack": "yarn build",
+    "release": "auto release",
+    "typecheck": "auto typecheck"
+  },
+  "dependencies": {
+    "p-retry": "^6.1.0"
+  },
+  "devDependencies": {
+    "@autossey/eslint-config": "^0.1.0",
+    "@autossey/tsconfig": "^1.1.0",
+    "typescript": "^5.2.2"
+  },
+  "eslintConfig": {
+    "extends": "@autossey/eslint-config"
+  }
+}
