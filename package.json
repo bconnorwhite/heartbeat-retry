@@ -1,6 +1,6 @@
 {
   "name": "heartbeat-retry",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Retry a promise with a heartbeat",
   "license": "MIT",
   "private": false,
